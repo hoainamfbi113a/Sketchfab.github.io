@@ -1,0 +1,1307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="-1" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="fontisto/css/fontisto.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="./js/jquery.js"></script>
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <span style="background-color:brown;" class="hiden-menu" id="abc">
+                <div class="responsive-navigation slided">
+                        <ul class="inner" style="margin-left: 0;">
+                            <li class="section navigation responsive-navigation__section --primary">
+                                <ul >
+                                    <li class="responsive-navigation__connection-actions">
+                                        <a href="/login" class="title responsive-navigation__login">Login</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="section navigation responsive-navigation__section"><a class="title" href="/">Home</a></li>
+                            <section class="c-navigation-accordion section navigation responsive-navigation__section">
+                                <header class="c-navigation-accordion__header">
+                                    <h3 class="title">Explore</h3></header>
+                                <div class="c-navigation-accordion__panel">
+                                    <ul>
+                                        <a href="/categories" title="All categories">
+                                            <li class="responsive-navigation__link"><i class="icon --translucent custom-icons icon-model-icon"></i><span>All categories</span></li>
+                                        </a>
+                                        <a href="/3d-models/popular" title="Popular 3D models">
+                                            <li class="responsive-navigation__link"><i class="icon --translucent custom-icons icon-model-icon"></i><span>Popular</span></li>
+                                        </a>
+                                        <a href="/3d-models/staffpicks" title="Staff picks 3D models">
+                                            <li class="responsive-navigation__link"><i class="icon --translucent custom-icons icon-model-icon"></i><span>Staff picks</span></li>
+                                        </a>
+                                        <li class="responsive-navigation__link"><a title="Downloadable 3D models" href="/3d-models?date=week&amp;features=downloadable&amp;sort_by=-likeCount"><i class="icon --translucent fa fa-download"></i><span>Downloadable</span></a></li>
+                                        <a href="/collections/popular" title="3D models collections">
+                                            <li class="responsive-navigation__link"><i class="icon --translucent custom-icons icon-model-icon"></i><span>Collections</span></li>
+                                        </a>
+                                        <li class="responsive-navigation__separator"></li>
+                                        <a href="https://sketchfab.com/blogs/community?ref=header" title="Blog" target="_blank">
+                                            <li class="responsive-navigation__link"><span>Blog</span></li>
+                                        </a>
+                                        <a href="https://forum.sketchfab.com?utm_source=website&amp;utm_campaign=responsive_navigation" title="Forum" target="_blank">
+                                            <li class="responsive-navigation__link"><span>Forum</span></li>
+                                        </a>
+                                        <a href="/members" title="Community members" target="_blank">
+                                            <li class="responsive-navigation__link"><span>Community members</span></li>
+                                        </a>
+                                    </ul>
+                                </div>
+                            </section>
+                            <section class="c-navigation-accordion section navigation responsive-navigation__section">
+                                <header class="c-navigation-accordion__header">
+                                    <h3 class="title">Buy 3D models</h3></header>
+                                <div class="c-navigation-accordion__panel">
+                                    <ul>
+                                        <a href="/store/categories">
+                                            <li class="responsive-navigation__link"><i class="icon --translucent custom-icons icon-model-icon"></i><span>All categories</span></li>
+                                        </a>
+                                        <a title="Best selling 3D models" href="/store/3d-models?sort_by=-orderCount">
+                                            <li class="responsive-navigation__link"><i class="icon --translucent custom-icons icon-model-icon"></i><span>Best selling</span></li>
+                                        </a>
+                                        <a title="Animated 3D models" href="/store/3d-models?animated=1">
+                                            <li class="responsive-navigation__link"><i class="icon --translucent fa fa-film"></i><span>Animated</span></li>
+                                        </a>
+                                        <a title="PBR 3D models" href="/store/3d-models?pbr=1">
+                                            <li class="responsive-navigation__link"><i class="icon --translucent custom-icons icon-model-icon"></i><span>PBR</span></li>
+                                        </a>
+                                        <a title="Low poly 3D models" href="/store/3d-models?max_face_count=10000&amp;min_face_count=0">
+                                            <li class="responsive-navigation__link"><i class="icon --translucent custom-icons icon-model-icon"></i><span>Low poly</span></li>
+                                        </a>
+                                        <a title="Game ready 3D models" href="/store/3d-models?file_formats=unitypackage&amp;file_formats=uasset">
+                                            <li class="responsive-navigation__link"><i class="icon --translucent fa fa-gamepad"></i><span>Game ready</span></li>
+                                        </a>
+                                    </ul>
+                                </div>
+                            </section>
+                            <section class="c-navigation-accordion section navigation responsive-navigation__section">
+                                <header class="c-navigation-accordion__header">
+                                    <h3 class="title">For business</h3></header>
+                                <div class="c-navigation-accordion__panel">
+                                    <ul>
+                                        <a href="/enterprise?ref=header" title="Enterprise solutions">
+                                            <li class="responsive-navigation__link"><span>Enterprise Solutions</span></li>
+                                        </a>
+                                        <a href="/3d-configurators?ref=header" title="3D configurators">
+                                            <li class="responsive-navigation__link"><span>3D configurators</span></li>
+                                        </a>
+                                        <a href="/3d-advertising?ref=header" title="3D advertising">
+                                            <li class="responsive-navigation__link"><span>3D advertising</span></li>
+                                        </a>
+                                        <a href="/developers?ref=header" title="Developers &amp; API">
+                                            <li class="responsive-navigation__link"><span>Developers &amp; API</span></li>
+                                        </a>
+                                        <a href="/plans?ref=header" title="Pricing">
+                                            <li class="responsive-navigation__link"><span>Pricing</span></li>
+                                        </a>
+                                        <a href="https://sketchfab.com/blogs/enterprise?ref=header" title="Customer Stories">
+                                            <li class="responsive-navigation__link"><span>Customer Stories</span></li>
+                                        </a>
+                                    </ul>
+                                </div>
+                            </section>
+                        </ul>
+                    </div>
+        </span>
+    <div class="header">
+        <div class="header-top">
+         <div class="header-left">
+            <div class="menu-reponsive">
+
+            </div>
+            <svg class="svg-logo" version="1.1" xmlns:xlink="#" xml:space="preserve" x="0" y="0" viewBox="0 0 121 25" enable-background="new 0 0 121 25">
+                <g class="logo-text">
+                    <path fill="white" d="M36.471,7.719c-1.526,0-2.289,0.504-2.289,1.512c0,0.448,0.189,0.791,0.567,1.029 c0.378,0.238,1.263,0.582,2.656,1.029c1.393,0.448,2.37,0.956,2.93,1.522c0.56,0.567,0.84,1.438,0.84,2.615 c0,1.498-0.455,2.632-1.365,3.401c-0.911,0.771-2.1,1.155-3.57,1.155c-1.092,0-2.429-0.168-4.011-0.504l-0.756-0.147l0.294-2.247 c1.876,0.253,3.311,0.379,4.305,0.379c1.484,0,2.226-0.616,2.226-1.849c0-0.447-0.171-0.798-0.515-1.05s-1.025-0.525-2.047-0.819 c-1.624-0.462-2.769-1.011-3.434-1.648s-0.998-1.522-0.998-2.657c0-1.428,0.434-2.492,1.302-3.192c0.868-0.7,2.058-1.05,3.57-1.05 c1.036,0,2.352,0.14,3.948,0.42l0.756,0.147L40.65,8.056C38.676,7.832,37.283,7.719,36.471,7.719z"></path>
+                    <path fill="white" d="M46.068,19.731h-2.814v-14.7h2.814v8.358l1.071-0.189l2.079-3.969h3.15l-2.73,4.977l2.877,5.523h-3.171 l-2.121-4.095l-1.155,0.188V19.731z"></path>
+                    <path fill="white" d="M56.705,17.075c0.329,0.287,0.801,0.431,1.417,0.431c1.302,0,2.464-0.042,3.486-0.126l0.589-0.063 l0.041,2.079c-1.61,0.392-3.066,0.588-4.368,0.588c-1.582,0-2.73-0.42-3.444-1.26c-0.714-0.84-1.071-2.205-1.071-4.095 c0-3.766,1.547-5.649,4.641-5.649c3.052,0,4.578,1.582,4.578,4.746l-0.209,1.953H56.19C56.204,16.322,56.375,16.788,56.705,17.075z M59.802,13.536c0-0.84-0.133-1.424-0.399-1.753c-0.266-0.329-0.732-0.493-1.396-0.493c-0.666,0-1.134,0.171-1.407,0.514 c-0.273,0.343-0.417,0.921-0.431,1.732H59.802z"></path>
+                    <path fill="white" d="M70.407,11.625h-2.583v4.305c0,0.42,0.011,0.718,0.031,0.893c0.021,0.175,0.098,0.325,0.231,0.451 c0.133,0.126,0.339,0.189,0.619,0.189l1.596-0.042l0.126,2.246c-0.938,0.211-1.651,0.315-2.142,0.315 c-1.26,0-2.121-0.283-2.583-0.851c-0.462-0.566-0.693-1.613-0.693-3.14v-4.368h-1.238V9.231h1.238V6.312h2.814v2.919h2.583V11.625z"></path>
+                    <path fill="white" d="M76.161,8.979c0.729,0,1.659,0.112,2.794,0.336l0.566,0.126l-0.084,2.226 c-1.106-0.112-1.925-0.168-2.457-0.168c-0.966,0-1.606,0.207-1.921,0.62c-0.315,0.413-0.473,1.193-0.473,2.341 c0,1.148,0.157,1.937,0.473,2.363c0.314,0.427,0.962,0.641,1.942,0.641l2.436-0.168l0.084,2.246 c-1.498,0.295-2.639,0.441-3.423,0.441c-1.554,0-2.671-0.438-3.35-1.312s-1.019-2.278-1.019-4.211c0-1.932,0.35-3.328,1.05-4.189 S74.607,8.979,76.161,8.979z"></path>
+                    <path fill="white" d="M84.414,19.731H81.6v-14.7h2.814v4.704c0.966-0.504,1.834-0.756,2.604-0.756c1.4,0,2.366,0.413,2.898,1.239 c0.531,0.826,0.798,2.1,0.798,3.822v5.691h-2.814v-5.628c0-0.882-0.104-1.536-0.314-1.963s-0.63-0.641-1.26-0.641 c-0.546,0-1.093,0.084-1.639,0.252l-0.272,0.084V19.731z"></path>
+                    <path fill="white" d="M96.531,11.625v8.106h-2.814v-8.106h-1.134V9.231h1.134V8.77c0-1.512,0.224-2.555,0.672-3.129 s1.246-0.861,2.395-0.861c0.504,0,1.155,0.07,1.953,0.21l0.44,0.063l-0.042,2.289c-0.616-0.028-1.134-0.042-1.554-0.042 s-0.7,0.112-0.84,0.336c-0.141,0.224-0.21,0.609-0.21,1.155v0.441h2.541v2.394H96.531z"></path>
+                    <path fill="white" d="M108.753,12.507v4.368c0.028,0.337,0.084,0.571,0.168,0.704s0.259,0.228,0.525,0.283l-0.084,2.121 c-0.714,0-1.285-0.049-1.712-0.146c-0.427-0.099-0.857-0.295-1.291-0.589c-1.008,0.49-2.037,0.735-3.087,0.735 c-2.171,0-3.255-1.147-3.255-3.444c0-1.119,0.301-1.914,0.902-2.383c0.603-0.469,1.526-0.746,2.772-0.83l2.247-0.168v-0.651 c0-0.434-0.099-0.731-0.294-0.893c-0.196-0.161-0.512-0.241-0.945-0.241l-3.948,0.168l-0.084-1.953 c1.498-0.406,2.923-0.609,4.273-0.609c1.352,0,2.324,0.28,2.919,0.84C108.456,10.379,108.753,11.276,108.753,12.507z M104.028,15.279c-0.784,0.07-1.176,0.49-1.176,1.26c0,0.771,0.343,1.155,1.028,1.155c0.532,0,1.113-0.084,1.743-0.252l0.315-0.084 v-2.247L104.028,15.279z"></path>
+                    <path fill="white" d="M116.522,8.979c1.47,0,2.545,0.402,3.224,1.208s1.019,2.244,1.019,4.316c0,2.071-0.392,3.503-1.176,4.294 s-2.136,1.187-4.053,1.187c-0.603,0-1.701-0.07-3.298-0.21l-0.798-0.084V5.031h2.814v4.515 C115.15,9.168,115.906,8.979,116.522,8.979z M115.536,17.464c0.938,0,1.567-0.228,1.89-0.683s0.482-1.271,0.482-2.447 c0-1.89-0.588-2.834-1.764-2.834c-0.56,0-1.092,0.07-1.596,0.21l-0.294,0.063v5.607C114.898,17.436,115.325,17.464,115.536,17.464z"></path>
+                </g>
+                <g class="logo">
+                    <path fill="white" d="M12.5,0.833C6.056,0.833,0.834,6.057,0.834,12.5S6.056,24.167,12.5,24.167S24.167,18.943,24.167,12.5 S18.944,0.833,12.5,0.833z"></path>
+                </g>
+                <g class="logo-circle">
+                    <path fill="#1EABD9" d="M12.5-0.029C5.596-0.029,0,5.568,0,12.472c0,6.904,5.596,12.501,12.5,12.501s12.5-5.597,12.5-12.501 C25.001,5.568,19.405-0.029,12.5-0.029z M11.414,19.911L6.025,16.8v-6.276l5.389,2.911V19.911z M12.374,11.958l-6.376-3.38 l6.376-3.682l6.377,3.682L12.374,11.958z M18.755,16.812l-5.369,3.1v-6.452l5.369-2.901V16.812z"></path>
+                </g>
+            </svg>
+            <ul class="c-navigation">
+                <li><a class="navigation-link" href="">EXPLORE</a>
+                <div class="Menu-list-item-sub">
+                        <div class="Menu-list-item-sub-list">
+                          <div class="Menu-list-item-sub-item">
+                            <a href="#" class="Menu-list-item-sub-item__txt">Popular</a>
+                          </div>
+                          <div class="Menu-list-item-sub-item">
+                            <a href="#" class="Menu-list-item-sub-item__txt">Furniture & Home</a>
+                          </div>
+                          <div class="Menu-list-item-sub-item">
+                            <a href="#" class="Menu-list-item-sub-item__txt">Furniture & Home</a>
+                          </div>
+                          <div class="Menu-list-item-sub-item">
+                            <a href="#" class="Menu-list-item-sub-item__txt">Staff picks</a>
+                          </div>
+                          <div class="Menu-list-item-sub-item">
+                            <a href="#" class="Menu-list-item-sub-item__txt">Architecture </a>
+                          </div>
+                          <div class="Menu-list-item-sub-item">
+                            <a href="#" class="Menu-list-item-sub-item__txt">Music</a>
+                          </div>
+                          <div class="Menu-list-item-sub-item">
+                            <a href="#" class="Menu-list-item-sub-item__txt">Downloadable</a>
+                          </div>
+                          <div class="Menu-list-item-sub-item">
+                            <a href="#" class="Menu-list-item-sub-item__txt">Art & Abstract</a>
+                          </div>
+                          <div class="Menu-list-item-sub-item">
+                            <a href="#" class="Menu-list-item-sub-item__txt">Nature & Plants</a>
+                          </div>
+                          <div class="Menu-list-item-sub-item">
+                            <a href="#" class="Menu-list-item-sub-item__txt">Collections</a>
+                          </div>
+                          <div class="Menu-list-item-sub-item">
+                            <a href="#" class="Menu-list-item-sub-item__txt">Cars & vehicles </a>
+                          </div>
+                          <div class="Menu-list-item-sub-item">
+                            <a href="#" class="Menu-list-item-sub-item__txt">News & Politics</a>
+                          </div>
+                          <div class="Menu-list-item-sub-item">
+                            <a href="#" class="Menu-list-item-sub-item__txt">Blog</a>
+                          </div>
+                          <div class="Menu-list-item-sub-item">
+                            <a href="#" class="Menu-list-item-sub-item__txt">Characters & Creatures</a>
+                          </div>
+                          <div class="Menu-list-item-sub-item">
+                            <a href="#" class="Menu-list-item-sub-item__txt">People</a>
+                          </div>
+                          <div class="Menu-list-item-sub-item">
+                            <a href="#" class="Menu-list-item-sub-item__txt">Forum</a>
+                          </div>
+                          <div class="Menu-list-item-sub-item">
+                            <a href="#" class="Menu-list-item-sub-item__txt">Cultural Heritage & History</a>
+                          </div>
+                          <div class="Menu-list-item-sub-item">
+                            <a href="#" class="Menu-list-item-sub-item__txt">Places & Travel</a>
+                          </div>
+                          <div class="Menu-list-item-sub-item">
+                            <a href="#" class="Menu-list-item-sub-item__txt">Community members</a>
+                          </div>
+                          <div class="Menu-list-item-sub-item">
+                            <a href="#" class="Menu-list-item-sub-item__txt">Electronics & Gadgets </a>
+                          </div>
+                          <div class="Menu-list-item-sub-item">
+                            <a href="#" class="Menu-list-item-sub-item__txt">Science & Technology</a>
+                          </div>
+
+                          <div class="Menu-list-item-sub-item">
+                            <a href="#" class="Menu-list-item-sub-item__txt"></a>
+                          </div>
+                          <div class="Menu-list-item-sub-item">
+                            <a href="#" class="Menu-list-item-sub-item__txt">Fashion & Style</a>
+                          </div>
+                          <div class="Menu-list-item-sub-item">
+                            <a href="#" class="Menu-list-item-sub-item__txt">Sports & Fitness</a>
+                          </div>
+                          <div class="Menu-list-item-sub-item">
+                            <a href="#" class="Menu-list-item-sub-item__txt"></a>
+                          </div>
+                          <div class="Menu-list-item-sub-item">
+                            <a href="#" class="Menu-list-item-sub-item__txt">Food & Drink</a>
+                          </div>
+                          <div class="Menu-list-item-sub-item">
+                            <a href="#" class="Menu-list-item-sub-item__txt">Weapons & Military</a>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- <div class="categories-navigation__menu --hover ">
+                        <div class="item-categories-navigation__menu">
+                            Fashion & Style
+                                <ol class="categories-navigation__list">
+                                        <li class="navigation-item"><a title="Animals &amp; Pets 3D models" href="#"><i class=" icon-category-animals-pets"></i><span>Animals &amp; Pets</span></a></li>
+                                        <li class="navigation-item"><a title="Architecture 3D models" href="#"><i class=" icon-category-animals-pets"></i><span>Architecture</span></a></li>
+                                        <li class="navigation-item"><a title="Art &amp; Abstract 3D models" href="#"><i class=" icon-category-animals-pets"></i><span>Art &amp; Abstract</span></a></li>
+                                        <li class="navigation-item"><a title="Cars &amp; vehicles 3D models" href="#"><i class=" icon-category-animals-pets"></i><span>Cars &amp; vehicles</span></a></li>
+                                        <li class="navigation-item"><a title="Characters &amp; Creatures 3D models" href="#"><i class="icon-category-animals-pets"></i><span>Characters &amp; Creatures</span></a></li>
+                                        <li class="navigation-item"><a title="Cultural Heritage &amp; History 3D models" href="#"><i class="icon-category-animals-pets"></i><span>Cultural Heritage &amp; History</span></a></li>
+                                        
+                                </ol>
+                        </div>
+                        <div class="item-categories-navigation__menu">
+                                <ol class="categories-navigation__list">
+                                        <li class="navigation-item"><a title="Animals &amp; Pets 3D models" href="#"><i class=" icon-category-animals-pets"></i><span>Animals &amp; Pets</span></a></li>
+                                        <li class="navigation-item"><a title="Architecture 3D models" href="#"><i class=" icon-category-animals-pets"></i><span>Architecture</span></a></li>
+                                        <li class="navigation-item"><a title="Art &amp; Abstract 3D models" href="#"><i class=" icon-category-animals-pets"></i><span>Art &amp; Abstract</span></a></li>
+                                        <li class="navigation-item"><a title="Cars &amp; vehicles 3D models" href="#"><i class=" icon-category-animals-pets"></i><span>Cars &amp; vehicles</span></a></li>
+                                        <li class="navigation-item"><a title="Characters &amp; Creatures 3D models" href="#"><i class="icon-category-animals-pets"></i><span>Characters &amp; Creatures</span></a></li>
+                                        <li class="navigation-item"><a title="Cultural Heritage &amp; History 3D models" href="#"><i class="icon-category-animals-pets"></i><span>Cultural Heritage &amp; History</span></a></li>
+                                        
+                                </ol>
+                        </div>
+                        <div class="item-categories-navigation__menu">
+                                <ol class="categories-navigation__list">
+                                        <li class="navigation-item"><a title="Animals &amp; Pets 3D models" href="#"><i class=" icon-category-animals-pets"></i><span>Animals &amp; Pets</span></a></li>
+                                        <li class="navigation-item"><a title="Architecture 3D models" href="#"><i class=" icon-category-animals-pets"></i><span>Architecture</span></a></li>
+                                        <li class="navigation-item"><a title="Art &amp; Abstract 3D models" href="#"><i class=" icon-category-animals-pets"></i><span>Art &amp; Abstract</span></a></li>
+                                        <li class="navigation-item"><a title="Cars &amp; vehicles 3D models" href="#"><i class=" icon-category-animals-pets"></i><span>Cars &amp; vehicles</span></a></li>
+                                        <li class="navigation-item"><a title="Characters &amp; Creatures 3D models" href="#"><i class="icon-category-animals-pets"></i><span>Characters &amp; Creatures</span></a></li>
+                                        <li class="navigation-item"><a title="Cultural Heritage &amp; History 3D models" href="#"><i class="icon-category-animals-pets"></i><span>Cultural Heritage &amp; History</span></a></li>
+                                        
+                                </ol>
+                        </div>
+                        <div class="item-categories-navigation__menu" id="item-categories-navigation__menu-color">
+                            <ol class="categories-navigation__list">
+                                    <li class="navigation-item"><a title="Best selling  3D models" href="#"><i class=" icon-category-animals-pets"></i><span>Best selling </span></a></li>
+                                    <li class="navigation-item"><a title="Animated  3D models" href="#"><i class=" icon-category-animals-pets"></i><span>Animated </span></a></li>
+                                    <li class="navigation-item"><a title="PBR  3D models" href="#"><i class=" icon-category-animals-pets"></i><span>PBR </span></a></li>
+                                    <li class="navigation-item"><a title="Low poly  3D models" href="#"><i class=" icon-category-animals-pets"></i><span>Low poly </span></a></li>
+                                    <li class="navigation-item"><a title="High poly  3D models" href="#"><i class=" icon-category-animals-pets"></i><span>High poly </span></a></li>
+                                    <li class="navigation-item"><a title="3D Printable  3D models" href="#"><i class=" icon-category-animals-pets"></i><span>3D Printable </span></a></li>
+                            </ol>
+                        </div>
+                    </div> -->
+                </li>
+                <li><a class="navigation-link" href="">BUY 3D MODELS</a>
+                    <div class="Menu-list-item-sub">
+                            <div class="Menu-list-item-sub-list">
+                              <div class="Menu-list-item-sub-item">
+                                <a href="#" class="Menu-list-item-sub-item__txt">Best selling</a>
+                              </div>
+                              <div class="Menu-list-item-sub-item">
+                                <a href="#" class="Menu-list-item-sub-item__txt">Furniture & Home</a>
+                              </div>
+                              <div class="Menu-list-item-sub-item">
+                                <a href="#" class="Menu-list-item-sub-item__txt">Furniture & Home</a>
+                              </div>
+                              <div class="Menu-list-item-sub-item">
+                                <a href="#" class="Menu-list-item-sub-item__txt">Animated</a>
+                              </div>
+                              <div class="Menu-list-item-sub-item">
+                                <a href="#" class="Menu-list-item-sub-item__txt">Architecture </a>
+                              </div>
+                              <div class="Menu-list-item-sub-item">
+                                <a href="#" class="Menu-list-item-sub-item__txt">Music</a>
+                              </div>
+                              <div class="Menu-list-item-sub-item">
+                                <a href="#" class="Menu-list-item-sub-item__txt">PBR</a>
+                              </div>
+                              <div class="Menu-list-item-sub-item">
+                                <a href="#" class="Menu-list-item-sub-item__txt">Art & Abstract</a>
+                              </div>
+                              <div class="Menu-list-item-sub-item">
+                                <a href="#" class="Menu-list-item-sub-item__txt">Nature & Plants</a>
+                              </div>
+                              <div class="Menu-list-item-sub-item">
+                                <a href="#" class="Menu-list-item-sub-item__txt">Low poly</a>
+                              </div>
+                              <div class="Menu-list-item-sub-item">
+                                <a href="#" class="Menu-list-item-sub-item__txt">Cars & vehicles </a>
+                              </div>
+                              <div class="Menu-list-item-sub-item">
+                                <a href="#" class="Menu-list-item-sub-item__txt">News & Politics</a>
+                              </div>
+                              <div class="Menu-list-item-sub-item">
+                                <a href="#" class="Menu-list-item-sub-item__txt">High poly</a>
+                              </div>
+                              <div class="Menu-list-item-sub-item">
+                                <a href="#" class="Menu-list-item-sub-item__txt">Characters & Creatures</a>
+                              </div>
+                              <div class="Menu-list-item-sub-item">
+                                <a href="#" class="Menu-list-item-sub-item__txt">People</a>
+                              </div>
+                              <div class="Menu-list-item-sub-item">
+                                <a href="#" class="Menu-list-item-sub-item__txt">3D Printable</a>
+                              </div>
+                              <div class="Menu-list-item-sub-item">
+                                <a href="#" class="Menu-list-item-sub-item__txt">Cultural Heritage & History</a>
+                              </div>
+                              <div class="Menu-list-item-sub-item">
+                                <a href="#" class="Menu-list-item-sub-item__txt">Places & Travel</a>
+                              </div>
+                              <div class="Menu-list-item-sub-item">
+                                <a href="#" class="Menu-list-item-sub-item__txt">Community members</a>
+                              </div>
+                              <div class="Menu-list-item-sub-item">
+                                <a href="#" class="Menu-list-item-sub-item__txt">Electronics & Gadgets </a>
+                              </div>
+                              <div class="Menu-list-item-sub-item">
+                                <a href="#" class="Menu-list-item-sub-item__txt">Science & Technology</a>
+                              </div>
+    
+                              <div class="Menu-list-item-sub-item">
+                                <a href="#" class="Menu-list-item-sub-item__txt"></a>
+                              </div>
+                              <div class="Menu-list-item-sub-item">
+                                <a href="#" class="Menu-list-item-sub-item__txt">Fashion & Style</a>
+                              </div>
+                              <div class="Menu-list-item-sub-item">
+                                <a href="#" class="Menu-list-item-sub-item__txt">Sports & Fitness</a>
+                              </div>
+                              <div class="Menu-list-item-sub-item">
+                                <a href="#" class="Menu-list-item-sub-item__txt"></a>
+                              </div>
+                              <div class="Menu-list-item-sub-item">
+                                <a href="#" class="Menu-list-item-sub-item__txt">Food & Drink</a>
+                              </div>
+                              <div class="Menu-list-item-sub-item">
+                                <a href="#" class="Menu-list-item-sub-item__txt">Weapons & Military</a>
+                              </div>
+                            </div>
+                          </div>
+                </li>
+                <li><a class="navigation-link" href="">FOR BUSINESS</a>
+                    <div class="Menu-list-item-sub">
+                        <div class="Menu-list-item-sub-list2">
+                          <div class="Menu-list-item-sub-item2">
+                            <a href="#" class="Menu-list-item-sub-item__txt">Enterprise solutions</a>
+                          </div>
+                          <div class="Menu-list-item-sub-item2">
+                            <a href="#" class="Menu-list-item-sub-item__txt">3D configurators</a>
+                          </div>
+                          <div class="Menu-list-item-sub-item2">
+                            <a href="#" class="Menu-list-item-sub-item__txt">3D advertising</a>
+                          </div>
+                          <div class="Menu-list-item-sub-item2">
+                            <a href="#" class="Menu-list-item-sub-item__txt">Developers & API</a>
+                          </div>
+                          <div class="Menu-list-item-sub-item2">
+                            <a href="#" class="Menu-list-item-sub-item__txt">Pricing</a>
+                          </div>
+                          <div class="Menu-list-item-sub-item2">
+                            <a href="#" class="Menu-list-item-sub-item__txt">Customer Stories</a>
+                          </div>
+                          
+                        </div>
+                      </div>
+                </li>
+            </ul>
+           
+        </div>
+        <form action="" class="search-site">
+                <button class="btn-search">
+                        <i class="fa_search"></i>
+                </button>
+                <input type="text" placeholder="Search 3D models">
+                
+        </form>
+        <div class="header-right">
+                <svg viewBox="0 0 14 14" class="svg-cart">
+                        <path d="M8 12a1 1 0 11.002 1.998A1 1 0 018 12zm-5 0a1 1 0 110 2 1 1 0 010-2zm5.865-2.367a.504.504 0 01-.472.367H2.835a.5.5 0 01-.467-.346L1.783 7.5h7.684l-.602 2.133zM1.111 4.206A.48.48 0 011.501 4h8.952l-.202.717v.004L9.75 6.5H1.511l-.48-1.773a.572.572 0 01.08-.521zM13.5 0h-1.54a.501.501 0 00-.482.364L10.735 3H1.501a1.47 1.47 0 00-1.197.616A1.573 1.573 0 00.071 5.01L1.41 9.936A1.504 1.504 0 002.835 11h5.558c.651 0 1.223-.428 1.43-1.08l1.391-4.932L12.339 1H13.5a.5.5 0 100-1z" transform="matrix(-1 0 0 1 14 0)" fill-rule="evenodd"></path>
+                </svg>
+                <a  href="#" class="btn btn-login">Login</a>
+                <a  href="#" class="btn btn-signup"> Sign Up</a>
+                <a  href="#" class="btn btn-upload"><span class="icon  fa fa-arrow-up"></span>Upload</a>
+        </div>
+        </div>
+    
+</div>   
+</header>
+<div class="header-bottom">
+<div class="header-bottomon">
+    <div class="headerbottoml text-button">
+        <div class="text-buttomon">
+
+       
+            <h1  class="hero__title" style="font-weight: 100 ;">
+                    Publish &amp; find
+                    <br>
+                    3D models online
+                </h1>
+                <button class="btn-jonforfree" data-action="open-signup">
+                        JOIN FOR FREE
+                    </button>
+        </div>
+    </div>
+    <iframe title="3D Model" id="iframe1" name="iframe1"
+    class="hero__viewer headerbottomr" data-src="https://sketchfab.com/models/9688985db84d447580d40e40e1649407/embed?autostart=1&amp;internal=1&amp;scrollwheel=0&amp;sound_enable=0&amp;transparent=1&amp;ui_animations=0&amp;ui_annotations=0&amp;ui_controls=0&amp;ui_fadeout=0&amp;ui_fullscreen=0&amp;ui_help=0&amp;ui_infos=0&amp;ui_inspector=0&amp;ui_settings=0&amp;ui_snapshots=0&amp;ui_stop=0&amp;ui_theatre=0&amp;ui_watermark=0" width="500" height="300" allowtransparency="true" mozallowfullscreen="true" webkitallowfullscreen="true" allow="vr; autoplay; fullscreen" src="https://sketchfab.com/models/9688985db84d447580d40e40e1649407/embed?api_version=1.3.0&amp;api_id=1_hero-viewer&amp;autostart=1&amp;internal=1&amp;scrollwheel=0&amp;sound_enable=0&amp;transparent=1&amp;ui_animations=0&amp;ui_annotations=0&amp;ui_controls=0&amp;ui_fadeout=0&amp;ui_fullscreen=0&amp;ui_help=0&amp;ui_infos=0&amp;ui_inspector=0&amp;ui_settings=0&amp;ui_snapshots=0&amp;ui_stop=0&amp;ui_theatre=0&amp;ui_watermark=0">
+    </iframe>
+    </div>
+</div>
+    <div class="static-page-container">
+            <div class="home-features__item">
+                    <img class="home-features__image" src="https://static.sketchfab.com/static/builds/web/dist/static/assets/images/pages/home/illustration-community-bbae6c9a636f0ebac9725a5ae2bb2572.svg" alt="Person looking at 3D Models from other creators">
+                    <h3 class="home-features__title">
+                        Join millions of 3D creators and showcase your work
+                    </h3>
+                    <p class="home-features__text">
+                        Our vibrant community and best-in-class tools mean Sketchfab is quite simply the best place to share your 3D work.
+                    </p>
+                    <a class="btn-static-item" data-action="open-signup">
+                        join sketchfab
+                    </a>
+            </div>
+
+            <div class="home-features__item">
+                    <img class="home-features__image" src="https://static.sketchfab.com/static/builds/web/dist/static/assets/images/pages/home/illustration-store-2d718597742e025f6983c5fff82dfd11.svg" alt="Person looking at 3D Models from other creators">
+                    <h3 class="home-features__title">
+                       
+                    Buy &amp; sell 3D models on the Sketchfab Store
+                
+                    </h3>
+                    <p class="home-features__text">
+                      
+                    Our model inspector means you can review every aspect of a model in 3D before you commit to purchase.
+                
+                    </p>
+                    <a class="btn-static-item" data-action="open-signup">
+                            
+                                Buy 3D models
+                           
+                    </a>
+            </div>
+
+            <div class="home-features__item">
+                    <img class="home-features__image" src="https://static.sketchfab.com/static/builds/web/dist/static/assets/images/pages/home/illustration-business-111a29fc64d90a30bcb22e8e5f7793c3.svg" alt="Person looking at 3D Models from other creators">
+                    <h3 class="home-features__title" id="reposiveerr">
+                            Share & embed 3D models anywhere online
+                    </h3>
+                    <p class="home-features__text ">
+                            With our easily embeddable viewer your 3D models can be shared anywhere online, just like sharing a video.
+                    </p>
+                    <a class="btn-static-item" id="btn-static-item-last" data-action="open-signup">
+                           
+                                discover our business solutions
+                           
+                    </a>
+            </div>
+
+
+    </div>
+
+    <div class="static-view-container">
+            <div class="home-viewer__content-reponsive">
+                    <h2 class="home__title home-viewer__title">
+                        Meet the best 3D viewer on the web
+                    </h2>
+                    <p class="home__text home-viewer__text">
+                        Fast, efficient, performant. Our powerful viewer embeds seamlessly everywhere.
+                    </p>
+        
+                    <ul class="home-viewer__list">
+        
+                            <li class="home-viewer__item">
+                                <i class="icon fa fa-check"></i>
+                                <span class="text">No plugin required</span>
+                            </li>
+                        
+                            <li class="home-viewer__item">
+                                <i class="icon fa fa-check"></i>
+                                <span class="text">Cross-browser compatible</span>
+                            </li>
+                        
+                            <li class="home-viewer__item">
+                                <i class="icon fa fa-check"></i>
+                                <span class="text">3D Audio and annotation support</span>
+                            </li>
+                        
+                            <li class="home-viewer__item">
+                                <i class="icon fa fa-check"></i>
+                                <span class="text">VR and AR support</span>
+                            </li>
+                        
+                            <li class="home-viewer__item">
+                                <i class="icon fa fa-check"></i>
+                                <span class="text">Mobile support</span>
+                            </li>
+                        
+                    </ul>
+        
+                    <a class="btn-lern-more" href="/features">
+                        LEARN MORE
+                    </a>
+                </div>
+        <div class="home-viewer__viewer-container">
+                
+            <iframe title="Sketchfab Viewer example" id="demo-viewer" class="home-viewer__viewer" src="https://sketchfab.com/models/9688985db84d447580d40e40e1649407/embed?autostart=0" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+        
+        </div>
+
+        <div class="home-viewer__content">
+            <h2 class="home__title home-viewer__title" id="home-viewer__title">
+                Meet the best 3D viewer on the web
+            </h2>
+            <p class="home__text home-viewer__text">
+                Fast, efficient, performant. Our powerful viewer embeds seamlessly everywhere.
+            </p>
+
+            <ul class="home-viewer__list">
+
+                    <li class="home-viewer__item">
+                        <i class="icon fa fa-check"></i>
+                        <span class="text">No plugin required</span>
+                    </li>
+                
+                    <li class="home-viewer__item">
+                        <i class="icon fa fa-check"></i>
+                        <span class="text">Cross-browser compatible</span>
+                    </li>
+                
+                    <li class="home-viewer__item">
+                        <i class="icon fa fa-check"></i>
+                        <span class="text">3D Audio and annotation support</span>
+                    </li>
+                
+                    <li class="home-viewer__item">
+                        <i class="icon fa fa-check"></i>
+                        <span class="text">VR and AR support</span>
+                    </li>
+                
+                    <li class="home-viewer__item">
+                        <i class="icon fa fa-check"></i>
+                        <span class="text">Mobile support</span>
+                    </li>
+                
+            </ul>
+
+            <a class="btn-lern-more" href="/features">
+                LEARN MORE
+            </a>
+        </div>
+    </div>
+    <div class="milion-3d">
+        <h2 class="home__title">
+            Join millions of 3D creators
+        </h2>
+        <p class="home__text">
+            Get inspired. Showcase your skills. Learn from millions of community members.
+        </p>
+         <!-- ----------START gird item---------------- -->
+        <div class="grid-container">
+            
+            <div class="grid-item">
+                    <div class="c-model-360-preview__image" style="background-position: -0% center; background-size: 5134.5px 192.544px; background-image: url(&quot;https://media.sketchfab.com/models/163f9e9e36774256a683ea104b4728cc/fallbacks/bcdb8bd90c6e4e50b924fdaa5f677bff/072a870e6a024881a7b9d60eeeb8d82f.jpeg&quot;);">
+                
+                    </div>
+                    <div class="card__footer">
+                            <div class="card__footer__left">
+                                <div class="image-container__image" style="background-image: url(https://media.sketchfab.com/avatars/936fc2b9537347e9b85a17ffc57b8c97/85170021da39444fa271bf13664f3f80.jpeg);"></div>    
+                                  
+                                <span>
+                                    <a class="model-name__label" data-route="" 
+                                    href="#" title="Space Сat 3D Model">Space Сat</a>   
+                                </span>         
+                           
+                            </div>
+                            <div class="card__footer__right">
+                                    <span class="fa fa-eye"></span>
+                                    <span class="count">
+                                     577
+                                    </span>
+                                    <span class="fa fa-comments"></span>
+                                    <span class="count">
+                                     5
+                                    </span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="count">
+                                    24
+                                    </span>
+                            </div>
+                        </div>
+                
+            </div>
+            <div class="grid-item"><div class="c-model-360-preview__image" style="background-position: -0% center; background-size: 5134.5px 192.544px; background-image: url(&quot;https://media.sketchfab.com/models/163f9e9e36774256a683ea104b4728cc/fallbacks/bcdb8bd90c6e4e50b924fdaa5f677bff/072a870e6a024881a7b9d60eeeb8d82f.jpeg&quot;);">
+                
+            </div>
+            <div class="card__footer">
+                    <div class="card__footer__left">
+                        <div class="image-container__image" style="background-image: url(https://media.sketchfab.com/avatars/936fc2b9537347e9b85a17ffc57b8c97/85170021da39444fa271bf13664f3f80.jpeg);"></div>    
+                          
+                        <span>
+                            <a class="model-name__label" data-route="" 
+                            href="#" title="Space Сat 3D Model">Space Сat</a>   
+                        </span>         
+                   
+                    </div>
+                    <div class="card__footer__right">
+                            <span class="fa fa-eye"></span>
+                            <span class="count">
+                             577
+                            </span>
+                            <span class="fa fa-comments"></span>
+                            <span class="count">
+                             5
+                            </span>
+                            <span class="fa fa-star"></span>
+                            <span class="count">
+                            24
+                            </span>
+                    </div>
+                </div></div>
+            <div class="grid-item"><div class="c-model-360-preview__image" style="background-position: -0% center; background-size: 5134.5px 192.544px; background-image: url(&quot;https://media.sketchfab.com/models/163f9e9e36774256a683ea104b4728cc/fallbacks/bcdb8bd90c6e4e50b924fdaa5f677bff/072a870e6a024881a7b9d60eeeb8d82f.jpeg&quot;);">
+                
+            </div>
+            <div class="card__footer">
+                    <div class="card__footer__left">
+                        <div class="image-container__image" style="background-image: url(https://media.sketchfab.com/avatars/936fc2b9537347e9b85a17ffc57b8c97/85170021da39444fa271bf13664f3f80.jpeg);"></div>    
+                          
+                        <span>
+                            <a class="model-name__label" data-route="" 
+                            href="#" title="Space Сat 3D Model">Space Сat</a>   
+                        </span>         
+                   
+                    </div>
+                    <div class="card__footer__right">
+                            <span class="fa fa-eye"></span>
+                            <span class="count">
+                             577
+                            </span>
+                            <span class="fa fa-comments"></span>
+                            <span class="count">
+                             5
+                            </span>
+                            <span class="fa fa-star"></span>
+                            <span class="count">
+                            24
+                            </span>
+                    </div>
+                </div></div> 
+            <div class="grid-item"><div class="c-model-360-preview__image" style="background-position: -0% center; background-size: 5134.5px 192.544px; background-image: url(&quot;https://media.sketchfab.com/models/163f9e9e36774256a683ea104b4728cc/fallbacks/bcdb8bd90c6e4e50b924fdaa5f677bff/072a870e6a024881a7b9d60eeeb8d82f.jpeg&quot;);">
+                
+            </div>
+            <div class="card__footer">
+                    <div class="card__footer__left">
+                        <div class="image-container__image" style="background-image: url(https://media.sketchfab.com/avatars/936fc2b9537347e9b85a17ffc57b8c97/85170021da39444fa271bf13664f3f80.jpeg);"></div>    
+                          
+                        <span>
+                            <a class="model-name__label" data-route="" 
+                            href="#" title="Space Сat 3D Model">Space Сat</a>   
+                        </span>         
+                   
+                    </div>
+                    <div class="card__footer__right">
+                            <span class="fa fa-eye"></span>
+                            <span class="count">
+                             577
+                            </span>
+                            <span class="fa fa-comments"></span>
+                            <span class="count">
+                             5
+                            </span>
+                            <span class="fa fa-star"></span>
+                            <span class="count">
+                            24
+                            </span>
+                    </div>
+                </div></div>  
+            <div class="grid-item"><div class="c-model-360-preview__image" style="background-position: -0% center; background-size: 5134.5px 192.544px; background-image: url(&quot;https://media.sketchfab.com/models/163f9e9e36774256a683ea104b4728cc/fallbacks/bcdb8bd90c6e4e50b924fdaa5f677bff/072a870e6a024881a7b9d60eeeb8d82f.jpeg&quot;);">
+                
+            </div>
+            <div class="card__footer">
+                    <div class="card__footer__left">
+                        <div class="image-container__image" style="background-image: url(https://media.sketchfab.com/avatars/936fc2b9537347e9b85a17ffc57b8c97/85170021da39444fa271bf13664f3f80.jpeg);"></div>    
+                          
+                        <span>
+                            <a class="model-name__label" data-route="" 
+                            href="#" title="Space Сat 3D Model">Space Сat</a>   
+                        </span>         
+                   
+                    </div>
+                    <div class="card__footer__right">
+                            <span class="fa fa-eye"></span>
+                            <span class="count">
+                             577
+                            </span>
+                            <span class="fa fa-comments"></span>
+                            <span class="count">
+                             5
+                            </span>
+                            <span class="fa fa-star"></span>
+                            <span class="count">
+                            24
+                            </span>
+                    </div>
+                </div></div>
+            <div class="grid-item"><div class="c-model-360-preview__image" style="background-position: -0% center; background-size: 5134.5px 192.544px; background-image: url(&quot;https://media.sketchfab.com/models/163f9e9e36774256a683ea104b4728cc/fallbacks/bcdb8bd90c6e4e50b924fdaa5f677bff/072a870e6a024881a7b9d60eeeb8d82f.jpeg&quot;);">
+                
+            </div>
+            <div class="card__footer">
+                    <div class="card__footer__left">
+                        <div class="image-container__image" style="background-image: url(https://media.sketchfab.com/avatars/936fc2b9537347e9b85a17ffc57b8c97/85170021da39444fa271bf13664f3f80.jpeg);"></div>    
+                          
+                        <span>
+                            <a class="model-name__label" data-route="" 
+                            href="#" title="Space Сat 3D Model">Space Сat</a>   
+                        </span>         
+                   
+                    </div>
+                    <div class="card__footer__right">
+                            <span class="fa fa-eye"></span>
+                            <span class="count">
+                             577
+                            </span>
+                            <span class="fa fa-comments"></span>
+                            <span class="count">
+                             5
+                            </span>
+                            <span class="fa fa-star"></span>
+                            <span class="count">
+                            24
+                            </span>
+                    </div>
+                </div></div>
+            <div class="grid-item"><div class="c-model-360-preview__image" style="background-position: -0% center; background-size: 5134.5px 192.544px; background-image: url(&quot;https://media.sketchfab.com/models/163f9e9e36774256a683ea104b4728cc/fallbacks/bcdb8bd90c6e4e50b924fdaa5f677bff/072a870e6a024881a7b9d60eeeb8d82f.jpeg&quot;);">
+                
+            </div>
+            <div class="card__footer">
+                    <div class="card__footer__left">
+                        <div class="image-container__image" style="background-image: url(https://media.sketchfab.com/avatars/936fc2b9537347e9b85a17ffc57b8c97/85170021da39444fa271bf13664f3f80.jpeg);"></div>    
+                          
+                        <span>
+                            <a class="model-name__label" data-route="" 
+                            href="#" title="Space Сat 3D Model">Space Сat</a>   
+                        </span>         
+                   
+                    </div>
+                    <div class="card__footer__right">
+                            <span class="fa fa-eye"></span>
+                            <span class="count">
+                             577
+                            </span>
+                            <span class="fa fa-comments"></span>
+                            <span class="count">
+                             5
+                            </span>
+                            <span class="fa fa-star"></span>
+                            <span class="count">
+                            24
+                            </span>
+                    </div>
+                </div></div>  
+            <div class="grid-item"><div class="c-model-360-preview__image" style="background-position: -0% center; background-size: 5134.5px 192.544px; background-image: url(&quot;https://media.sketchfab.com/models/163f9e9e36774256a683ea104b4728cc/fallbacks/bcdb8bd90c6e4e50b924fdaa5f677bff/072a870e6a024881a7b9d60eeeb8d82f.jpeg&quot;);">
+                
+            </div>
+            <div class="card__footer">
+                    <div class="card__footer__left">
+                        <div class="image-container__image" style="background-image: url(https://media.sketchfab.com/avatars/936fc2b9537347e9b85a17ffc57b8c97/85170021da39444fa271bf13664f3f80.jpeg);"></div>    
+                          
+                        <span>
+                            <a class="model-name__label" data-route="" 
+                            href="#" title="Space Сat 3D Model">Space Сat</a>   
+                        </span>         
+                   
+                    </div>
+                    <div class="card__footer__right">
+                            <span class="fa fa-eye"></span>
+                            <span class="count">
+                             577
+                            </span>
+                            <span class="fa fa-comments"></span>
+                            <span class="count">
+                             5
+                            </span>
+                            <span class="fa fa-star"></span>
+                            <span class="count">
+                            24
+                            </span>
+                    </div>
+                </div></div>
+            <div class="grid-item"><div class="c-model-360-preview__image" style="background-position: -0% center; background-size: 5134.5px 192.544px; background-image: url(&quot;https://media.sketchfab.com/models/163f9e9e36774256a683ea104b4728cc/fallbacks/bcdb8bd90c6e4e50b924fdaa5f677bff/072a870e6a024881a7b9d60eeeb8d82f.jpeg&quot;);">
+                
+            </div>
+            <div class="card__footer">
+                    <div class="card__footer__left">
+                        <div class="image-container__image" style="background-image: url(https://media.sketchfab.com/avatars/936fc2b9537347e9b85a17ffc57b8c97/85170021da39444fa271bf13664f3f80.jpeg);"></div>    
+                          
+                        <span>
+                            <a class="model-name__label" data-route="" 
+                            href="#" title="Space Сat 3D Model">Space Сat</a>   
+                        </span>         
+                   
+                    </div>
+                    <div class="card__footer__right">
+                            <span class="fa fa-eye"></span>
+                            <span class="count">
+                             577
+                            </span>
+                            <span class="fa fa-comments"></span>
+                            <span class="count">
+                             5
+                            </span>
+                            <span class="fa fa-star"></span>
+                            <span class="count">
+                            24
+                            </span>
+                    </div>
+                </div></div>
+            <div class="grid-item"><div class="c-model-360-preview__image" style="background-position: -0% center; background-size: 5134.5px 192.544px; background-image: url(&quot;https://media.sketchfab.com/models/163f9e9e36774256a683ea104b4728cc/fallbacks/bcdb8bd90c6e4e50b924fdaa5f677bff/072a870e6a024881a7b9d60eeeb8d82f.jpeg&quot;);">
+                
+            </div>
+            <div class="card__footer">
+                    <div class="card__footer__left">
+                        <div class="image-container__image" style="background-image: url(https://media.sketchfab.com/avatars/936fc2b9537347e9b85a17ffc57b8c97/85170021da39444fa271bf13664f3f80.jpeg);"></div>    
+                          
+                        <span>
+                            <a class="model-name__label" data-route="" 
+                            href="#" title="Space Сat 3D Model">Space Сat</a>   
+                        </span>         
+                   
+                    </div>
+                    <div class="card__footer__right">
+                            <span class="fa fa-eye"></span>
+                            <span class="count">
+                             577
+                            </span>
+                            <span class="fa fa-comments"></span>
+                            <span class="count">
+                             5
+                            </span>
+                            <span class="fa fa-star"></span>
+                            <span class="count">
+                            24
+                            </span>
+                    </div>
+                </div></div>  
+            <div class="grid-item"><div class="c-model-360-preview__image" style="background-position: -0% center; background-size: 5134.5px 192.544px; background-image: url(&quot;https://media.sketchfab.com/models/163f9e9e36774256a683ea104b4728cc/fallbacks/bcdb8bd90c6e4e50b924fdaa5f677bff/072a870e6a024881a7b9d60eeeb8d82f.jpeg&quot;);">
+                
+            </div>
+            <div class="card__footer">
+                    <div class="card__footer__left">
+                        <div class="image-container__image" style="background-image: url(https://media.sketchfab.com/avatars/936fc2b9537347e9b85a17ffc57b8c97/85170021da39444fa271bf13664f3f80.jpeg);"></div>    
+                          
+                        <span>
+                            <a class="model-name__label" data-route="" 
+                            href="#" title="Space Сat 3D Model">Space Сat</a>   
+                        </span>         
+                   
+                    </div>
+                    <div class="card__footer__right">
+                            <span class="fa fa-eye"></span>
+                            <span class="count">
+                             577
+                            </span>
+                            <span class="fa fa-comments"></span>
+                            <span class="count">
+                             5
+                            </span>
+                            <span class="fa fa-star"></span>
+                            <span class="count">
+                            24
+                            </span>
+                    </div>
+                </div></div>
+            <div class="grid-item"><div class="c-model-360-preview__image" style="background-position: -0% center; background-size: 5134.5px 192.544px; background-image: url(&quot;https://media.sketchfab.com/models/163f9e9e36774256a683ea104b4728cc/fallbacks/bcdb8bd90c6e4e50b924fdaa5f677bff/072a870e6a024881a7b9d60eeeb8d82f.jpeg&quot;);">
+                
+            </div>
+            <div class="card__footer">
+                    <div class="card__footer__left">
+                        <div class="image-container__image" style="background-image: url(https://media.sketchfab.com/avatars/936fc2b9537347e9b85a17ffc57b8c97/85170021da39444fa271bf13664f3f80.jpeg);"></div>    
+                          
+                        <span>
+                            <a class="model-name__label" data-route="" 
+                            href="#" title="Space Сat 3D Model">Space Сat</a>   
+                        </span>         
+                   
+                    </div>
+                    <div class="card__footer__right">
+                            <span class="fa fa-eye"></span>
+                            <span class="count">
+                             577
+                            </span>
+                            <span class="fa fa-comments"></span>
+                            <span class="count">
+                             5
+                            </span>
+                            <span class="fa fa-star"></span>
+                            <span class="count">
+                            24
+                            </span>
+                    </div>
+                </div></div>
+
+              
+          </div>
+          <div class="join-sketchfab">
+                <a class="btn-lern-more" href="/features">
+                    JOIN SKETCHFAB
+                </a>
+        </div>
+    </div>
+          <!-- ----------end gird item---------------- -->
+    <div class="home-section-store">
+        <h2 class="home__title --store">Buy & sell 3D models on the Sketchfab Store</h2>
+        <p class="home__text" style="text-align: center;">
+                Find everything from low poly assets to animated rigs &amp; digital scans for your 3D, Virtual Reality, and Augmented Reality projects.
+        </p>
+        <div class="c-store-features">
+            <div class="item-store-features">
+                    <img alt="" class="c-store-features__image" src="https://static.sketchfab.com/static/builds/web/dist/static/assets/images/pages/store/feature-inspector-fde53998b43ed422f540e6d7d6d0b58b.jpg">
+                    <h2 class="c-store-features__title">What you see is what you get</h2>
+                    <p class="c-store-features__paragraph">Preview model topology, UVs, and textures with our 3D viewer and model inspector before you purchase.</p>
+                    <p><a class="c-store-features__link store-link" href="/models/034a1a146e304161b7c45b9354ed2dfd/embed?autostart=1&amp;ui_inspector=1&amp;ui_inspector_open=1" target="_blank">See an example</a></p>
+            </div>
+            <div class="item-store-features">
+                    <img alt="" class="c-store-features__image" src="https://static.sketchfab.com/static/builds/web/dist/static/assets/images/pages/store/feature-inspector-fde53998b43ed422f540e6d7d6d0b58b.jpg">
+                    <h2 class="c-store-features__title">What you see is what you get</h2>
+                    <p class="c-store-features__paragraph">Preview model topology, UVs, and textures with our 3D viewer and model inspector before you purchase.</p>
+                    <p><a class="c-store-features__link store-link" href="/models/034a1a146e304161b7c45b9354ed2dfd/embed?autostart=1&amp;ui_inspector=1&amp;ui_inspector_open=1" target="_blank">See an example</a></p>
+            </div>
+            <div class="item-store-features">
+                    <img alt="" class="c-store-features__image" src="https://static.sketchfab.com/static/builds/web/dist/static/assets/images/pages/store/feature-inspector-fde53998b43ed422f540e6d7d6d0b58b.jpg">
+                    <h2 class="c-store-features__title">What you see is what you get</h2>
+                    <p class="c-store-features__paragraph">Preview model topology, UVs, and textures with our 3D viewer and model inspector before you purchase.</p>
+                    <p><a class="c-store-features__link store-link" href="/models/034a1a146e304161b7c45b9354ed2dfd/embed?autostart=1&amp;ui_inspector=1&amp;ui_inspector_open=1" target="_blank">See an example</a></p>
+            </div>
+        </div>
+        <div class="categories-navigation__menu">
+            <div class="item-categories-navigation__menu">
+                    <ul class="categories-navigation__list">
+                            <li class="navigation-item"><a title="Animals &amp; Pets 3D models" href="#"><i class=" icon-category-animals-pets"></i><span>Animals &amp; Pets</span></a></li>
+                            <li class="navigation-item"><a title="Architecture 3D models" href="#"><i class=" icon-category-animals-pets"></i><span>Architecture</span></a></li>
+                            <li class="navigation-item"><a title="Art &amp; Abstract 3D models" href="#"><i class=" icon-category-animals-pets"></i><span>Art &amp; Abstract</span></a></li>
+                            <li class="navigation-item"><a title="Cars &amp; vehicles 3D models" href="#"><i class=" icon-category-animals-pets"></i><span>Cars &amp; vehicles</span></a></li>
+                            <li class="navigation-item"><a title="Characters &amp; Creatures 3D models" href="#"><i class="icon-category-animals-pets"></i><span>Characters &amp; Creatures</span></a></li>
+                            <li class="navigation-item"><a title="Cultural Heritage &amp; History 3D models" href="#"><i class="icon-category-animals-pets"></i><span>Cultural Heritage &amp; History</span></a></li>
+                            
+                    </ul>
+            </div>
+            <div class="item-categories-navigation__menu">
+                    <ul class="categories-navigation__list">
+                            <li class="navigation-item"><a title="Animals &amp; Pets 3D models" href="#"><i class=" icon-category-animals-pets"></i><span>Animals &amp; Pets</span></a></li>
+                            <li class="navigation-item"><a title="Architecture 3D models" href="#"><i class=" icon-category-animals-pets"></i><span>Architecture</span></a></li>
+                            <li class="navigation-item"><a title="Art &amp; Abstract 3D models" href="#"><i class=" icon-category-animals-pets"></i><span>Art &amp; Abstract</span></a></li>
+                            <li class="navigation-item"><a title="Cars &amp; vehicles 3D models" href="#"><i class=" icon-category-animals-pets"></i><span>Cars &amp; vehicles</span></a></li>
+                            <li class="navigation-item"><a title="Characters &amp; Creatures 3D models" href="#"><i class="icon-category-animals-pets"></i><span>Characters &amp; Creatures</span></a></li>
+                            <li class="navigation-item"><a title="Cultural Heritage &amp; History 3D models" href="#"><i class="icon-category-animals-pets"></i><span>Cultural Heritage &amp; History</span></a></li>
+                            
+                    </ul>
+            </div>
+            <div class="item-categories-navigation__menu">
+                    <ul class="categories-navigation__list">
+                            <li class="navigation-item"><a title="Animals &amp; Pets 3D models" href="#"><i class=" icon-category-animals-pets"></i><span>Animals &amp; Pets</span></a></li>
+                            <li class="navigation-item"><a title="Architecture 3D models" href="#"><i class=" icon-category-animals-pets"></i><span>Architecture</span></a></li>
+                            <li class="navigation-item"><a title="Art &amp; Abstract 3D models" href="#"><i class=" icon-category-animals-pets"></i><span>Art &amp; Abstract</span></a></li>
+                            <li class="navigation-item"><a title="Cars &amp; vehicles 3D models" href="#"><i class=" icon-category-animals-pets"></i><span>Cars &amp; vehicles</span></a></li>
+                            <li class="navigation-item"><a title="Characters &amp; Creatures 3D models" href="#"><i class="icon-category-animals-pets"></i><span>Characters &amp; Creatures</span></a></li>
+                            <li class="navigation-item"><a title="Cultural Heritage &amp; History 3D models" href="#"><i class="icon-category-animals-pets"></i><span>Cultural Heritage &amp; History</span></a></li>
+                            
+                    </ul>
+            </div>
+            <div class="item-categories-navigation__menu" id="item-categories-navigation__menu-color">
+                <ul class="categories-navigation__list">
+                        <li class="navigation-item"><a title="Best selling  3D models" href="#"><i class=" icon-category-animals-pets"></i><span>Best selling </span></a></li>
+                        <li class="navigation-item"><a title="Animated  3D models" href="#"><i class=" icon-category-animals-pets"></i><span>Animated </span></a></li>
+                        <li class="navigation-item"><a title="PBR  3D models" href="#"><i class=" icon-category-animals-pets"></i><span>PBR </span></a></li>
+                        <li class="navigation-item"><a title="Low poly  3D models" href="#"><i class=" icon-category-animals-pets"></i><span>Low poly </span></a></li>
+                        <li class="navigation-item"><a title="High poly  3D models" href="#"><i class=" icon-category-animals-pets"></i><span>High poly </span></a></li>
+                        <li class="navigation-item"><a title="3D Printable  3D models" href="#"><i class=" icon-category-animals-pets"></i><span>3D Printable </span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="btn-browes">
+        <a href="/store" class="btn-browse-the">
+            Browse the sketchfab store
+        </a>
+     </div>
+
+    </div>
+    <div class="home-configurator__features-section">
+        <div class="static-page__container">
+                    <h2 class="home__title share" style="color: #1caad9;">
+                        Share and embed 3D models anywhere online
+                    </h2>
+                    <div class="home-configurator__features">
+                <div class="c-viewer-feature">
+                    <div class="c-viewer-feature__image">
+                        <img alt="A crown with the Sketchfab logo" src="https://static.sketchfab.com/static/builds/web/dist/static/assets/images/pages/home/icon-market-leading-3367e34663dd20f3a5516cea2b06c569.svg">
+                    </div>
+
+                    <p class="c-viewer-feature__text">
+                        The market-leading 3D viewer for the web.
+                    </p>
+                </div>
+
+                <div class="c-viewer-feature">
+                    <div class="c-viewer-feature__image">
+                        <img alt="Two cogs to show our models are configurable" src="https://static.sketchfab.com/static/builds/web/dist/static/assets/images/pages/home/icon-configurable-fb7834944beef0fdc96cf13456268890.svg">
+                    </div>
+
+                    <p class="c-viewer-feature__text">
+                        Interactive and configurable, VR and AR ready.
+                    </p>
+                </div>
+
+                <div class="c-viewer-feature">
+                    <div class="c-viewer-feature__image">
+                        <img alt="A computer and a cellphone showing a 3D Model" src="https://static.sketchfab.com/static/builds/web/dist/static/assets/images/pages/home/icon-responsive-7049632f66ccbb76e2144fd1852c6300.svg">
+                    </div>
+
+                    <p class="c-viewer-feature__text">
+                        Works with all operating systems, browsers and devices.
+                    </p>
+                </div>
+
+                <div class="c-viewer-feature">
+                    <div class="c-viewer-feature__image">
+                        <img alt="An html tag to show you can embed the configurator everywhere" src="https://static.sketchfab.com/static/builds/web/dist/static/assets/images/pages/home/icon-embeddable-3c96c0eeda57b9ebee4fcee7afbd6fb1.svg">
+                    </div>
+
+                    <p class="c-viewer-feature__text">
+                        Embeddable everywhere, for e-commerce, advertising, and social media.
+                    </p>
+                </div>
+
+
+                    </div>
+                </div>
+    
+                
+    
+    
+            </div>
+            <iframe title="Sketchfab Configurator example" 
+                 class="home-configurator__demo" 
+                 data-src="https://demos.sketchfab.com/clients/cabinet/index.html?scrollwheel=0&amp;transparent=1&amp;white=1" 
+                 src="https://demos.sketchfab.com/clients/cabinet/index.html?scrollwheel=0&amp;transparent=1&amp;white=1" 
+                 style="visibility: visible;">
+            </iframe>
+
+        <div class="home-brands home__section">
+            <div class="brands-title">
+                <h2 class="home__title home-brands__title">
+                     Trusted by Leading Brands
+                </h2>     
+        <div class="c-plan-brands">
+                
+                    
+        <div class="c-plan-brands__brand">
+        
+            <img src="https://static.sketchfab.com/static/builds/web/dist/static/assets/images/brands/TheBritishMuseum-29af504c4fac9473d8f63037d42a041e.png" alt="The British Museum">
+        </div>
+        
+                
+                    
+        <div class="c-plan-brands__brand">
+        
+            <img src="https://static.sketchfab.com/static/builds/web/dist/static/assets/images/brands/UnderArmour-a8b937920824b54f3f2e50927145a2c3.png" alt="Under Armour">
+        </div>
+        
+                
+                    
+        <div class="c-plan-brands__brand">
+        
+            <img src="https://static.sketchfab.com/static/builds/web/dist/static/assets/images/brands/Adidas-daaedac34cd2e2dff57b9ac254fcc174.svg" alt="Adidas">
+        </div>
+        
+                
+                    
+        <div class="c-plan-brands__brand">
+        
+            <img src="https://static.sketchfab.com/static/builds/web/dist/static/assets/images/brands/HP-9461c029acc43afb6dff53249f90ff71.png" alt="HP">
+        </div>
+        
+                
+                    
+        <div class="c-plan-brands__brand">
+        
+            <img src="https://static.sketchfab.com/static/builds/web/dist/static/assets/images/brands/redbull-b71899fd0b3c97976f3b4505aa49d34b.png" alt="Red Bull">
+        </div>
+        
+                
+                    
+        <div class="c-plan-brands__brand">
+        
+            <img src="https://static.sketchfab.com/static/builds/web/dist/static/assets/images/brands/New%20Balance-ed82fbd3fdf45df3e8699ddec60234e0.png" alt="New Balance">
+        </div>
+        
+                
+                    
+        <div class="c-plan-brands__brand">
+        
+            <img src="https://static.sketchfab.com/static/builds/web/dist/static/assets/images/brands/mtv-9ef8ed01d2b474765b28aadf6bfa5a3f.png" alt="MTV">
+        </div>
+        
+                
+                    
+        <div class="c-plan-brands__brand">
+        
+            <img src="https://static.sketchfab.com/static/builds/web/dist/static/assets/images/brands/Htc-02d80274ef889802207d587c7ecce23f.png" alt="HTC">
+        </div>
+        
+                
+                    
+        <div class="c-plan-brands__brand">
+        
+            <img src="https://static.sketchfab.com/static/builds/web/dist/static/assets/images/brands/Intel-afa5bf3248c7d9c81f7ff45fc610b909.png" alt="Intel">
+        </div>
+        
+                
+                    
+        <div class="c-plan-brands__brand">
+        
+            <img src="https://static.sketchfab.com/static/builds/web/dist/static/assets/images/brands/Nike-22d23dba4555a29b054ae2deb7668dcb.svg" alt="Nike">
+        </div>
+        
+                
+                    
+        <div class="c-plan-brands__brand">
+        
+            <img src="https://static.sketchfab.com/static/builds/web/dist/static/assets/images/brands/nissan-5ae948a49c77cf413a55ae1441e9bf0f.png" alt="Nissan">
+        </div>
+        
+                
+                    
+        <div class="c-plan-brands__brand">
+        
+            <img src="https://static.sketchfab.com/static/builds/web/dist/static/assets/images/brands/porsche-d4c71064492e125dfe61ff426297ffbd.png" alt="Porsche">
+        </div>
+        
+                
+            </div>
+        
+                    
+                <div class="div-btn-discover">
+                    <a class="btn-discover" href="/enterprise">
+                        Discover our business solutions
+                    </a>
+                </div>
+    </div>
+
+    <!-- editor gray -->
+    <div class="home-editor-grey">
+        <h2 class="home__title home-brands__title" style="color: #1caad9;">
+            The most powerful 3D editor online
+        </h2>
+        <p class="home__text">
+            Under-the-hood access to a powerful Physically Based Rendering toolset for every single model. Set up lighting, materials, animation, audio, annotations, VR positioning, and more.
+        </p>
+        <div class="home-editor__video-container">
+            <iframe id="editor-video" title="Video about the 3D editor online" class="js-player home-editor__video" src="https://player.vimeo.com/video/289701084?title=0&amp;byline=0&amp;portrait=0&amp;transparent=0&amp;loop=1" width="640" height="360" frameborder="0" allow="autoplay; encrypted-media"></iframe>
+        </div>
+    </div>
+    <!-- join milions of 3D creators -->
+    <div class="home__section">
+        <div class="static-page__container">
+            <h2 class="home__title home-brands__title" style="color: #1caad9;">
+                        Join millions of 3D creators
+            </h2>
+            <div class="div-btn-discover">
+                
+           
+                <button class="btn-discover" data-action="open-signup">
+                    Join Sketchfab for free
+                </button>
+            </div>
+        </div>
+    </div>
+    <nav class="main-footer__navigation">
+            <div class="main-footer__col main-footer__col-firts-child">
+                <h3 class="main-footer__title">upgrade</h3>
+                <ul class="main-footer__links">
+                    <li class="main-footer__link"><a class="skfb-link" href="#">Pricing</a></li>
+                    <li class="main-footer__link"><a class="skfb-link" href="#">Education</a></li>
+                    <li class="main-footer__link"><a class="skfb-link" href="#">Museums</a></li>
+                    <li class="main-footer__link"><a class="skfb-link" href="#">Solutions for Business</a></li>
+                </ul>
+            </div>
+            <div class="main-footer__col">
+                <h3 class="main-footer__title">ecosystem</h3>
+                <ul class="main-footer__links">
+                    <li class="main-footer__link"><a class="skfb-link" href="#">Exporters</a></li>
+                    <li class="main-footer__link"><a class="skfb-link" href="#">Importers</a></li>
+                    <li class="main-footer__link"><a class="skfb-link" href="#">Virtual Reality</a></li>
+                    <li class="main-footer__link"><a class="skfb-link" href="#">Mobile</a></li>
+                    <li class="main-footer__link"><a class="skfb-link" href="#">Buy 3D models</a></li>
+                </ul>
+            </div>
+            <div class="main-footer__col">
+                <h3 class="main-footer__title">developers</h3>
+                <ul class="main-footer__links">
+                    <li class="main-footer__link"><a class="skfb-link" href="#">Data API</a></li>
+                    <li class="main-footer__link"><a class="skfb-link" href="#">Viewer API</a></li>
+                    <li class="main-footer__link"><a class="skfb-link" href="#">Download API</a></li>
+                    <li class="main-footer__link"><a class="skfb-link" href="#">Labs</a></li>
+                </ul>
+            </div>
+            <div class="main-footer__col">
+                <h3 class="main-footer__title">community</h3>
+                <ul class="main-footer__links">
+                    <li class="main-footer__link"><a class="skfb-link" href="#">Help Center</a></li>
+                    <li class="main-footer__link"><a class="skfb-link" href="#">Free 3D models</a></li>
+                    <li class="main-footer__link"><a class="skfb-link" href="#">Blog</a></li>
+                    <li class="main-footer__link"><a class="skfb-link" href="#">Forum</a></li>
+                </ul>
+            </div>
+            <div class="main-footer__col">
+                <h3 class="main-footer__title">about</h3>
+                <ul class="main-footer__links">
+                    <li class="main-footer__link"><a class="skfb-link" href="#">Company</a></li>
+                    <li class="main-footer__link"><a class="skfb-link" href="#">Careers</a></li>
+                    <li class="main-footer__link"><a class="skfb-link" href="#">Press Kit</a></li>
+                    <li class="main-footer__link"><a class="skfb-link" href="#">Features</a></li>
+                    <li class="main-footer__link"><a class="skfb-link button btn-large btn-primary main-footer__button" href="#">Contact us</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="main-footer__copyrights-container">
+            <div class="main-footer__copyrights">
+                <svg class="svg-logo main-footer__logo" style="width: 25px;" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" x="0" y="0" viewBox="0 0 25 25" enable-background="new 0 0 25 25">
+                    <g class="logo">
+                        <path fill="#ffffff" d="M12.5,0.833C6.056,0.833,0.834,6.057,0.834,12.5S6.056,24.167,12.5,24.167S24.167,18.943,24.167,12.5 S18.944,0.833,12.5,0.833z"></path>
+                    </g>
+                    <g class="logo-circle">
+                        <path fill="#1caad9" d="M12.5-0.029C5.596-0.029,0,5.568,0,12.472c0,6.904,5.596,12.501,12.5,12.501s12.5-5.597,12.5-12.501 C25.001,5.568,19.405-0.029,12.5-0.029z M11.414,19.911L6.025,16.8v-6.276l5.389,2.911V19.911z M12.374,11.958l-6.376-3.38 l6.376-3.682l6.377,3.682L12.374,11.958z M18.755,16.812l-5.369,3.1v-6.452l5.369-2.901V16.812z"></path>
+                    </g>
+                </svg>
+                <span>2019 Sketchfab - All Rights reserved</span>
+            </div>
+            <span class="main-footer__copyrights-links">
+                <a href="/terms" class="skfb-link">Terms of service</a>
+                <a href="https://help.sketchfab.com/hc/en-us/articles/115004259123-Refund-Policy?utm_source=website&amp;utm_campaign=footer" class="skfb-link" rel="noopener noreferrer" target="_blank">Refund policy</a>
+                <a href="/privacy" class="skfb-link">Privacy policy</a>
+                <a href="/sitemap" class="skfb-link">Sitemap</a>
+            </span>
+            <span class="main-footer__social-links">
+                <a href="https://twitter.com/Sketchfab" rel="noopener noreferrer" target="_blank" class="skfb-link" aria-label="Follow us on Twitter">
+                    <svg width="18" height="18">
+                        <g fill="none" fill-rule="evenodd">
+                            <path d="M0 0h18v18H0z"></path>
+                            <path class="prefix__social-link-path" d="M18 3.723a7.82 7.82 0 01-2.127.597c.797-.468 1.342-1.154 1.635-2.056a7.341 7.341 0 01-2.356.896C14.438 2.387 13.541 2 12.462 2c-1.019 0-1.889.36-2.61 1.081a3.557 3.557 0 00-1.08 2.61c0 .34.029.622.087.844a10.45 10.45 0 01-4.254-1.142A10.464 10.464 0 011.23 2.668a3.656 3.656 0 00-.51 1.863c0 1.336.534 2.362 1.6 3.076-.55-.011-1.136-.164-1.757-.457v.036c0 .878.292 1.66.878 2.346.586.686 1.307 1.11 2.163 1.275-.34.093-.64.14-.897.14-.152 0-.38-.023-.686-.07a3.753 3.753 0 001.31 1.828c.627.48 1.339.727 2.136.738-1.36 1.055-2.889 1.582-4.588 1.582-.305 0-.598-.017-.879-.052a10.355 10.355 0 005.66 1.652 10.76 10.76 0 003.692-.624c1.148-.416 2.132-.973 2.953-1.67.82-.697 1.526-1.5 2.118-2.408a10.612 10.612 0 001.318-2.848c.287-.99.43-1.977.43-2.962 0-.21-.005-.369-.017-.474A7.175 7.175 0 0018 3.723z" fill="#999" fill-rule="nonzero"></path></g></svg></a><a href="https://www.instagram.com/sketchfab" rel="noopener noreferrer" target="_blank" class="skfb-link" aria-label="Follow us on Instagram"><svg width="18" height="18"><g fill="none" fill-rule="evenodd">
+                                <path d="M0 0h18v18H0z"></path>
+                                <path class="prefix__social-link-path" d="M9 0C6.556 0 6.25.01 5.29.054S3.676.25 3.104.473A4.411 4.411 0 001.51 1.51c-.5.5-.809 1.002-1.039 1.594C.25 3.677.098 4.33.054 5.289.01 6.25 0 6.556 0 9s.01 2.75.054 3.71c.044.959.196 1.613.418 2.185.23.592.538 1.094 1.039 1.594.5.5 1.002.808 1.594 1.039.572.222 1.226.374 2.184.418C6.25 17.99 6.556 18 9 18s2.75-.01 3.71-.054c.959-.044 1.613-.196 2.185-.418a4.412 4.412 0 001.594-1.039c.5-.5.809-1.002 1.039-1.594.222-.572.374-1.226.418-2.184C17.99 11.75 18 11.444 18 9s-.01-2.75-.054-3.71c-.044-.959-.196-1.613-.418-2.185a4.412 4.412 0 00-1.039-1.594c-.5-.5-1.002-.809-1.594-1.038C14.323.25 13.67.098 12.711.054 11.75.01 11.444 0 9 0m0 1.622c2.403 0 2.688.009 3.637.052.877.04 1.354.187 1.67.31.421.163.72.358 1.036.673.315.315.51.615.673 1.035.123.317.27.794.31 1.671.043.95.052 1.234.052 3.637s-.009 2.688-.052 3.637c-.04.877-.187 1.354-.31 1.67a2.79 2.79 0 01-.673 1.036c-.315.315-.615.51-1.035.673-.317.123-.794.27-1.671.31-.95.043-1.234.052-3.637.052s-2.688-.009-3.637-.052c-.877-.04-1.354-.187-1.671-.31a2.788 2.788 0 01-1.035-.673 2.789 2.789 0 01-.673-1.035c-.123-.317-.27-.794-.31-1.671-.043-.95-.052-1.234-.052-3.637s.009-2.688.052-3.637c.04-.877.187-1.354.31-1.67a2.79 2.79 0 01.673-1.036c.315-.315.615-.51 1.035-.673.317-.123.794-.27 1.671-.31.95-.043 1.234-.052 3.637-.052M9 12a3 3 0 110-6 3 3 0 010 6m0-7.622a4.622 4.622 0 110 9.244 4.622 4.622 0 010-9.244zm5.884-.182a1.08 1.08 0 11-2.16 0 1.08 1.08 0 012.16 0z" fill="#999"></path>
+                            </g>
+                        </svg>
+                </a>
+                <a href="https://www.facebook.com/Sketchfab" rel="noopener noreferrer" target="_blank" class="skfb-link" aria-label="Follow us on Facebook"><svg width="18" height="18"><g fill="none" fill-rule="evenodd">
+                    <path d="M0 0h18v18H0z"></path>
+                    <path class="prefix__social-link-path" d="M10.074 18V9.787h2.747l.414-3.203h-3.161V4.541c0-.515.108-.901.324-1.16.216-.257.637-.386 1.263-.386l1.684-.013V.124C12.765.041 11.946 0 10.888 0 9.637 0 8.636.368 7.886 1.104c-.75.736-1.125 1.776-1.125 3.12v2.36H4v3.203h2.76V18h3.314z" fill="#999" fill-rule="nonzero"></path>
+                </g></svg>
+            </a>
+            <a href="https://www.pinterest.com/sketchfab" rel="noopener noreferrer" target="_blank" class="skfb-link" aria-label="Follow us on Pinterest">
+                <svg width="18" height="18">
+                    <g fill="none" fill-rule="evenodd">
+                        <path d="M0 0h18v18H0z"></path>
+                        <path class="prefix__social-link-path" d="M9.318 0C4.453 0 2 3.522 2 6.459c0 1.778.667 3.36 2.097 3.95.234.096.444.003.512-.26.048-.18.16-.638.21-.829.068-.26.041-.35-.148-.576-.412-.491-.676-1.127-.676-2.028 0-2.613 1.937-4.952 5.042-4.952 2.75 0 4.26 1.697 4.26 3.963 0 2.98-1.306 5.497-3.246 5.497-1.071 0-1.873-.895-1.616-1.992.308-1.31.904-2.723.904-3.669 0-.846-.45-1.552-1.381-1.552-1.095 0-1.975 1.144-1.975 2.676 0 .976.327 1.636.327 1.636l-1.317 5.634c-.392 1.672-.06 3.722-.031 3.93.017.122.173.151.243.058.101-.133 1.406-1.758 1.849-3.383.125-.46.72-2.842.72-2.842.356.685 1.396 1.289 2.501 1.289 3.292 0 5.525-3.03 5.525-7.086C15.8 2.856 13.227 0 9.318 0" fill="#999"></path>
+                    </g>
+                </svg></a>
+                <a href="https://www.linkedin.com/company/sketchfab" rel="noopener noreferrer" target="_blank" class="skfb-link" aria-label="Follow us on Linkedin"><svg width="18" height="18"><g fill="none" fill-rule="evenodd">
+                    <path d="M0 0h18v18H0z"></path>
+                    <path class="prefix__social-link-path" d="M.234 18H4.1V5.848H.234V18zM4.35 2.101C4.34 1.494 4.138.992 3.747.595 3.357.198 2.838 0 2.191 0 1.545 0 1.018.198.611.595.204.992 0 1.495 0 2.101c0 .595.198 1.095.594 1.497.396.403.912.604 1.547.604h.017c.658 0 1.188-.201 1.59-.604.4-.402.601-.902.601-1.497zM14.136 18H18v-6.969c0-1.798-.407-3.157-1.221-4.08-.814-.922-1.89-1.383-3.229-1.383-1.517 0-2.682.683-3.496 2.049h.033V5.848H6.223c.034.77.034 4.821 0 12.152h3.864v-6.794c0-.443.04-.77.117-.98.168-.409.419-.756.753-1.042.335-.286.747-.43 1.238-.43 1.294 0 1.94.917 1.94 2.75V18z" fill="#999" fill-rule="nonzero"></path>
+                </g>
+            </svg>
+        </a>
+    </span>
+</div>
+</div>
+<script>
+window.onload = function() {
+  let frameElement = document.getElementById("iframe1");
+  let doc = frameElement.contentDocument;
+  doc.body.innerHTML = doc.body.innerHTML + '<style>.gui {display:none}</style>';
+}
+</script>
+</body>
+</html>
