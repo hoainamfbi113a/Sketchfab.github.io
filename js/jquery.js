@@ -27,12 +27,14 @@ $(document).ready(function() {
            $(".logo-text path").css("fill", "black");
            $("a.btn-signup").css("color", "white");
            $("a.btn-upload").css("color", "white");
+           $(".navigation-link").attr("id", "btn-login-black");
         }
         else {
            $('.header').removeClass('header-white');
         //    $('.navigation-link-black').addClass("navigation-link");
            $('.c-navigation').removeClass("c-navigation-black");
            $('.btn-login').removeAttr('id');
+           $('.navigation-link').removeAttr('id');
            $(".logo-text path").removeAttr( 'style');
            $("a.btn-signup").removeAttr('style');
            $("a.btn-upload").removeAttr('style');

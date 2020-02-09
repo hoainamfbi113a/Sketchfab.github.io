@@ -796,8 +796,17 @@ img{
 ul.c-navigation-black li>a{
     color: black;
 }
-#btn-login-black{
+/* ul.c-navigation-black:hover li>a{
     color: black;
+} */
+/* .c-navigation-black li:hover .navigation-link { 
+    color: black; 
+} */
+.navigation-link:hover{
+    color: black;
+}
+#btn-login-black{
+ color: black;
 }
 /* -------------------------------------reponsive---------------------------- */
 @media only screen and (max-width:1108px)
